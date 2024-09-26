@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson10</title>
+    <style>
+        input[type=text]{
+            border:2px solid green;
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: uppercase;
+
+        }
+        input[type=password]{
+            border:2px solid blue;
+        }
+        input[type=submit]{
+        color: brown;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+        ul>li{
+            color: darkmagenta;
+        }
+       h3+p+p{
+        color: green;
+       }
+      li:nth-child(2){
+        background-color: aquamarine;
+      }
+       p:hover{
+        color: red;
+       }
+        a:hover{
+        color: red;
+       }
+    li::after{
+   content: "😀";}
+ /*the emojis did not appear after i did content so i copied this one from google*/
+
+#p1::first-letter{
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+li:nth-child(2)::before{
+    content: "☕";}
+    li:nth-child(1)::before{
+    content: "🍵";}
+    li:nth-child(3)::before{
+    content: "🥛";
+}
+div:not(.div1){
+    border: 2px dotted red;
+}
+    </style>
+</head>
+<body>
+    <h1>Advanced Selectors</h1>
+    <input type="text" placeholder="Username"><br><br>
+    <input type="password" placeholder="password"><br><br>
+    <input type="submit" placeholder="submit"><br><br>
+    <ul>
+        <li>Tee</li>
+        <li>coffee</li>
+        <li>milk</li>
+    </ul>
+        <h3>This is my heading</h3>
+        <p id="p1">This is my first paragraph</p>
+        <p id="p2">This is my second paragraph</p>
+        <h4>Psuedo Classes</h4>
+        <a href="#">Hover over me</a>
+        <div class="div1">This is the first division</div>
+        <div class="div2">This is the second division</div>
+
+</body>
+</html>
